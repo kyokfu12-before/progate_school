@@ -1,3 +1,587 @@
-h1{
-	color:green;
+body {
+  margin: 0;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  color: #888;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #323A45;
+  transition: all .3s;
+}
+
+a:hover {
+  color: #0dc0c0;
+}
+
+h2, h3, h4, h5, h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+h4, h5 {
+  color: #444;
+  font-size: 18px;
+}
+
+.container {
+  width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/*-------  ここまで共通のCSS（変更不要） --------*/
+
+/*------- ここからCSSを書き始めてください --------*/
+
+header{
+  height:50px;
+  width:1275px;
+  border-bottom:2px solid rgba(0,0,0,0.1);
+  z-index:10;
+  position:fixed;
+  top:0;
+  background-color:white;
+}
+
+.header-left{
+  float:left;
+  padding-top:12px;
+}
+
+.header-logo{
+  color:#777;
+  font-family:'Dosis', sans-seri;
+  margin-left:60px;
+  font-weight:800;
+  font-size:22px;
+}
+
+.header-hover:hover{
+  color:#0DC0C0;
+  transition:all 0.2s;
+}
+
+.header-right{
+  float:right;
+  margin-right:70px;
+  margin-top:15px;
+}
+
+.header-contents{
+  float:left;
+  margin-left:20px;
+  color:#323A45;
+  font-weight:bold;
+  font-size:15px;
+}
+
+.front-img{
+  height:590px;
+  width:1275px;
+  background-image:url(https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/backgrounds/top.jpg);
+  -moz-background-size:cover;
+  background-size:cover;
+  margin-top:-5px;
+}
+
+.filter{
+  height:600px;
+  background-color:rgba(0, 0, 0, 0.6);
+}
+
+.front-word{
+  padding-top:210px;
+  text-align:center;
+}
+
+.front-word h1{
+  color:#f3f3f3;
+  font-size:50px;
+  margin-bottom:15px;
+  font-weight:400;
+}
+
+.front-word p{
+  color:rgba(255, 255, 255, 0.8);
+  font-size:18px;
+  margin-bottom:40px;
+}
+
+.btn{
+  width:150px;
+  height:40px;
+  border:1px solid rgba(250, 250, 250, 0.4);
+  display:inline-block;
+  transition:all 0.3s;
+  color:white;
+  padding-top:10px;
+  font-size:18px;
+  font-weight:600;
+}
+
+.btn:hover{
+  border:1px solid rgba(250, 250, 250, 1.0);
+  color:white
+}
+
+.word{
+  opacity:1.0;
+  color:white;
+}
+
+.lungs-wrapper{
+  text-align:center;
+  margin-top:70px;
+}
+
+.lungs-title{
+  color:#555;
+  font-size:35px;
+  font-weight:normal;
+}
+
+.lungs{
+  margin-top:30px;
+  display:inline-block;
+  width:900px;
+}
+
+.lung{
+  display:inline-block;
+  width:360px;
+  padding-right:40px;
+  padding-top:40px;
+}
+
+.lungs-one{
+  color:#444;
+}
+
+.lung p{
+  color:#888;
+}
+
+.chara-title-wrapper{
+  text-align:center;
+  height:370px;
+  background-color:#f4f4f4;
+}
+
+.chara-title{
+  padding-top:65px;
+  color:#555;
+  font-weight:normal;
+  font-size:35px;
+}
+
+.chara-details{
+  margin-top:90px;
+  margin-left:120px;
+}
+
+.chara-detail{
+  display:inline-block;
+  width:470px;
+  height:90px;
+  margin-top:50px;
+  margin-right:70px;
+  vertical-align: top;
+}
+
+.chara-detail h3{
+  color:#444;
+  font-size:17px;
+  font-weight:500;
+}
+
+.chara-detail p{
+  color:#888;
+}
+
+.option-wrapper{
+  background-color:#f4f4f4;
+  margin-top:120px;
+  text-align:center;
+  height:950px;
+}
+
+.option-title{
+  padding-top:90px;
+  padding-bottom:40px;
+  color:#555;
+  font-weight:normal;
+  font-size:35px;
+}
+
+.option{
+  background-color:white;
+  width:380px;
+  padding-top:40px;
+  height:640px;
+  display:inline-block;
+}
+
+.option-name h1{
+  padding-top:30px;
+  font-weight:normal;
+  font-size:32px;
+}
+
+.option-price h1{
+  padding-top:30px;
+}
+
+.option-name{
+  background-color:#323A45;
+  color:white;
+  margin:0 20px;
+  height:110px;
+}
+
+.option-price{
+  background-color:#f0f0f0;
+  height:110px;
+  margin:0 20px;
+}
+
+.option-detail{
+  margin-top:40px;
+}
+
+.option-detail h3{
+  display:inline-block;
+  width:210px;
+  border-bottom:1px solid #f0f0f0;
+  height:50px;
+}
+
+.entry{
+  background-color:#2d323a;
+  color:#f0f0f0;
+  padding:10px;
+  width:90px;
+  margin-left:130px;
+  margin-top:30px;
+}
+
+.entry span{
+  color:white;
+  font-size:20px;
+  opacity:0.9;
+}
+
+.entry span:hover{
+  opacity:1.0;
+}
+
+.blue{
+  background-color:#0DC0C0;
+}
+
+.center{
+  margin:0 30px;
+}
+
+.intro-wrapper{
+  text-align:center;
+}
+
+.intro-title{
+  padding-top:90px;
+  padding-bottom:40px;
+  color:#555;
+  font-weight:normal;
+  font-size:35px;
+}
+
+.mentor{
+  width:950px;
+  margin-left:150px;
+  margin-bottom:50px;
+}
+
+.mentor img{
+  width:200px;
+  border-radius:200px;
+}
+
+.mentor h4{
+  font-size:18px;
+}
+
+.message-wrapper{
+  background-image:url("https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/backgrounds/night_view.jpg");
+  background-size:cover;
+  text-align:center;
+  height:400px;
+}
+
+.message-filter{
+  height:400px;
+  background-color:rgba(0, 0, 0, 0.6);
+}
+
+.message-wrapper h1{
+  color:white;
+  padding-top:160px;
+  font-weight:500;
+  font-size:24px;
+}
+
+.column-wrapper{
+  text-align:center;
+  background-color:#f4f4f4;
+  height:1680px;
+}
+
+.column-title{
+  padding-top:90px;
+  padding-bottom:40px;
+  color:#555;
+  font-weight:normal;
+  font-size:35px;
+}
+
+.column-btns{
+  margin-bottom:40px;
+}
+
+.column-btn{
+  display:inline-block;
+}
+
+.show-btn, .column-btn, .tips-btn{
+  display:inline-block;
+  height:30px;
+  text-height:30px;
+  margin-right:10px;
+  padding:9px 12px 0 12px;
+}
+
+.show-btn{
+  background-color:#009ca8;
+  color:white;
+  width:70px;
+  font-weight:bold;
+}
+
+.column-btn, .tips-btn{
+  background-color:white;
+  color:#444;
+  font-size:16px;
+  font-weight:bold;
+}
+
+.column-btn:hover, .tips-btn:hover{
+  color:white;
+  background-color:#009ca8;
+}
+
+.column-contents{
+  width:1100px;
+  display:inline-block;
+}
+
+.column-content{
+  width:520px;
+  display:inline-block;
+  float:left;
+  background-color:white;
+  margin-right:30px;
+  margin-bottom:40px;
+}
+
+.column-content img{
+  width:500px;
+  margin-top:8px;
+  margin-bottom:14px;
+}
+
+.column-content a{
+  color:#444;
+  font-size:18px;
+  font-weight:bold;
+}
+
+.column-content a:hover{
+  color:#009ca8;
+}
+
+.column-content h4{
+  font-size:14px;
+  margin-bottom:30px;
+}
+
+.load-btn{
+  padding-top:10px;
+  margin-top:30px;
+  margin-right:10px;
+  display:inline-block;
+  background-color:#2d323a;
+  width:120px;
+  height:35px;
+  color:#c9d1d6;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 600;
+  font-size:18px;
+}
+
+.load-btn:hover{
+  opacity:0.8;
+}
+
+.form-wrapper{
+  background-image:url("https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/backgrounds/contact.jpg");
+  background-size:cover;
+  height:690px;
+  text-align:center;
+}
+
+.form-filter{
+  height:690px;
+  background-color:rgba(0, 0, 0, 0.6);
+}
+
+.form-title{
+  font-size:30px;
+  color:white;
+  padding-top:80px;
+}
+
+.form-left{
+  width:600px;
+  float:left;
+  margin-top:40px;
+  margin-left:15px;
+}
+
+.form-left-title{
+  text-align:left;
+  color:white;
+  margin-top:13px;
+  font-size:23px;
+  margin-bottom:15px;
+}
+
+.form-left input{
+  width:600px;
+  height:50px;
+  margin-bottom:15px;
+  border-radius:5px;
+  font-size:18px;
+  text-height:50px;
+  padding-left:14px;
+  background-color:rgba(250, 250, 250, 0.08);
+  border:1px solid rgba(250, 250, 250, 0.08);
+}
+
+.form-left textarea{
+  padding:15px;
+  width:600px;
+  height:180px;
+  border-radius:5px;
+  margin-bottom:30px;
+  font-size:18px;
+  background-color:rgba(250, 250, 250, 0.08);
+  border:1px solid rgba(250, 250, 250, 0.08);
+}
+
+.form-left button{
+  font-family: 'Dosis', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  background: #0dc0c0;
+  height:60px;
+  float:left;
+  margin-left:10px;
+}
+
+.form-right{
+  width:500px;
+  float:right;
+  color:white;
+  text-align:left;
+  margin-right:40px;
+  margin-top:40px;
+}
+
+.form-right-top h2{
+  font-size:23px;
+  margin-bottom:20px;
+}
+
+.form-right-top p{
+  font-size:14px;
+  width:470px;
+  line-height:24px;
+}
+
+.form-right-bottom h2{
+  margin-top:30px;
+  font-size:23px;
+}
+
+.form-right-bottom p{
+  font-size:14px;
+}
+
+.form-right-bottom i{
+  padding-right:10px;
+}
+
+.form-right-bottom h3{
+  font-size:14px;
+  margin-top:30px;
+  margin-left:10px;
+}
+
+footer{
+  height:370px;
+  display:inline-block;
+  text-align:center;
+  width:1270px;
+}
+
+.footer-top{
+  height:180px;
+}
+
+.footer-top h1{
+  color:#222;
+  font-weight:200;
+  margin-top:70px;
+  font-size:32px;
+  opacity:0.7;
+}
+
+.footer-bottom{
+  height:90px;
+  background-color:#222;
+}
+
+.footer-top i{
+  font-size:35px;
+  color:#222;
+  margin-right:20px;
+  margin-top:20px;
+}
+
+.footer-bottom{
+  padding-top:35px;
 }
