@@ -66,9 +66,9 @@ header{
 
 .header-logo{
   color:#777;
-  font-family:'Dosis', sans-seri;
+  font-family:'Dosis', sans-serif;
   margin-left:60px;
-  font-weight:800;
+  font-weight:700;
   font-size:22px;
 }
 
@@ -81,6 +81,7 @@ header{
   float:right;
   margin-right:70px;
   margin-top:15px;
+  width:350px;
 }
 
 .header-contents{
@@ -133,6 +134,7 @@ header{
   padding-top:10px;
   font-size:18px;
   font-weight:600;
+  background-color: 
 }
 
 .btn:hover{
@@ -173,9 +175,15 @@ header{
   color:#444;
 }
 
-.lung p{
+.lung-content{
   color:#888;
+  display: none;
 }
+
+.lung-active{
+  display: block;
+}
+
 
 .chara-title-wrapper{
   text-align:center;
